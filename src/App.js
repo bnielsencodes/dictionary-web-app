@@ -10,6 +10,12 @@ export default function App() {
   const [searchedWord, setSearchedWord] = useState([]);
   const [wordData, setWordData] = useState([]);
 
+  // fetch API and set wordData state
+  useEffect(() => {
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
+      .then((res) => res.json())
+      .then((data) => setWordData(data));
+  }, []);
 
   return (
     <div className="main">
