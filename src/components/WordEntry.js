@@ -16,9 +16,9 @@ export default function WordEntry(props) {
 
   return (
     <div className="word-entry">
-      <WordEntryHeader />
-      <Source />
+      <WordEntryHeader word={props.item.word} phonetic={props.item.phonetic} />
       {meanings}
+      <Source sourceUrl={props.item.sourceUrls} />
     </div>
   );
 }
