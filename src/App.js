@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import WordEntry from "./components/WordEntry";
+import Meaning from "./components/Meaning";
 import "./App.css";
 import { nanoid } from "nanoid";
 
@@ -46,14 +47,13 @@ export default function App() {
           });
         });
         setWordData(dataObj[0]);
+        setMeanings(dataObj[0].meanings);
       });
   }, [searchedWord]);
 
-  // map through fetch data to create WordEntry components
-  const wordEntry = wordData.map((item) => {
-    return <WordEntry key={item.id} item={item} nanoid={nanoid} />;
+  const meaningElements = meanings.map((item) => {
+    return <Meaning key={nanoid()} item={item} />;
   });
-  }, []);
 
   return (
     <div className="main">
