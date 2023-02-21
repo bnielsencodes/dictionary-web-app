@@ -63,7 +63,7 @@ export default function App() {
         searchInput={searchInput}
         handleSubmit={handleSubmit}
       />
-      {wordEntry}
+      <WordEntry wordData={wordData} meaningElements={meaningElements} />
     </div>
   );
 }
