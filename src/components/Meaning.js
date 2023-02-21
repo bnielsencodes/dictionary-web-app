@@ -3,6 +3,10 @@ export default function Meaning(props) {
     return <li>{item.definition}</li>;
   });
 
+  const synonyms = props.item.synonyms.map((item) => {
+    return <p>{item}</p>;
+  });
+
   return (
     <div className="meaning">
       <div className="box">
@@ -14,7 +18,7 @@ export default function Meaning(props) {
         <dt>
           <p className="">Synonyms</p>
         </dt>
-        <dd></dd>
+        <dd>{synonyms}</dd>
       </dl>
     </div>
   );
