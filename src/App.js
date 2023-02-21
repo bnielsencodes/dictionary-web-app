@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Header from "./components/Header";
 import "./App.css";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
 
   return (
     <div className="main">
+      <Header />
     </div>
   );
 }
