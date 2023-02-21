@@ -33,6 +33,8 @@ export default function App() {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
       .then((res) => res.json())
       .then((data) => setWordData(data));
+  }, [searchedWord]);
+
   // map through fetch data to create WordEntry components
   const wordEntry = wordData.map((item) => {
     return <WordEntry key={item.id} item={item} nanoid={nanoid} />;
