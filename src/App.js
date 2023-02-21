@@ -10,7 +10,8 @@ export default function App() {
     searchInput: "",
   });
   const [searchedWord, setSearchedWord] = useState([]);
-  const [wordData, setWordData] = useState([]);
+  const [wordData, setWordData] = useState("");
+  const [meanings, setMeanings] = useState([]);
 
   // set searchInput state on every keystroke
   function handleSearchChange(event) {
