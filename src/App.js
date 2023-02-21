@@ -33,7 +33,20 @@ export default function App() {
   useEffect(() => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
       .then((res) => res.json())
-      .then((data) => setWordData(data));
+      .then((data) => {
+        let dataObj = [];
+        data.forEach((item) => {
+          dataObj.push({
+            word: item.word,
+            phonetic: item.phonetics[0]?.text || "",
+            audio: item.phonetics[0]?.audio || "",
+            meanings: item.meanings,
+            src: item.sourceUrls[0] || "",
+            id: nanoid(),
+          });
+        });
+        setWordData(dataObj[0]);
+      });
   }, [searchedWord]);
 
   // map through fetch data to create WordEntry components
