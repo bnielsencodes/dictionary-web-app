@@ -22,6 +22,12 @@ export default function App() {
     });
   }
 
+  // submit search
+  function handleSubmit(event) {
+    event.preventDefault();
+    setSearchedWord(searchInput.searchInput);
+  }
+
   // fetch API and set wordData state
   useEffect(() => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
@@ -38,6 +44,8 @@ export default function App() {
       <Header />
       <SearchBar
         handleSearchChange={handleSearchChange}
+        searchInput={searchInput}
+        handleSubmit={handleSubmit}
       />
       {wordEntry}
     </div>
