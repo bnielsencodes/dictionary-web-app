@@ -12,6 +12,16 @@ export default function App() {
   const [searchedWord, setSearchedWord] = useState([]);
   const [wordData, setWordData] = useState([]);
 
+  // set searchInput state on every keystroke
+  function handleSearchChange(event) {
+    setSearchInput((prevSearchData) => {
+      return {
+        ...prevSearchData,
+        [event.target.name]: event.target.value,
+      };
+    });
+  }
+
   // fetch API and set wordData state
   useEffect(() => {
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
@@ -27,6 +37,7 @@ export default function App() {
     <div className="main">
       <Header />
       <SearchBar
+        handleSearchChange={handleSearchChange}
       />
       {wordEntry}
     </div>
