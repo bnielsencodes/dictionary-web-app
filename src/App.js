@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import WordEntry from "./components/WordEntry";
 import "./App.css";
+import { nanoid } from "nanoid";
 
 export default function App() {
   const [searchInput, setSearchInput] = useState({
@@ -18,7 +19,7 @@ export default function App() {
       .then((data) => setWordData(data));
   // map through fetch data to create WordEntry components
   const wordEntry = wordData.map((item) => {
-    return <WordEntry key={item.id} item={item} />;
+    return <WordEntry key={item.id} item={item} nanoid={nanoid} />;
   });
   }, []);
 

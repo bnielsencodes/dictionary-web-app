@@ -1,6 +1,7 @@
 import WordEntryHeader from "./WordEntryHeader";
 import Meaning from "./Meaning";
 import Source from "./Source";
+import { nanoid } from "nanoid";
 
 export default function WordEntry(props) {
   const meanings = props.item.meanings.map((item) => {
@@ -8,6 +9,7 @@ export default function WordEntry(props) {
       <Meaning
         key={item.id}
         item={item}
+        nanoid={nanoid}
       />
     );
   });
