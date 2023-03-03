@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
+import { nanoid } from "nanoid";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
 import WordEntry from "./components/WordEntry";
 import Meaning from "./components/Meaning";
 import "./App.css";
-import { nanoid } from "nanoid";
 
 export default function App() {
   const [searchInput, setSearchInput] = useState({
@@ -57,8 +56,7 @@ export default function App() {
 
   return (
     <div className="main">
-      <Header />
-      <SearchBar
+      <Header
         handleSearchChange={handleSearchChange}
         searchInput={searchInput}
         handleSubmit={handleSubmit}
