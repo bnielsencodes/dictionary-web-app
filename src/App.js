@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import Header from "./components/Header";
-import WordEntry from "./components/WordEntry";
+import Main from "./components/Main";
 import Meaning from "./components/Meaning";
 import "./App.css";
 
@@ -55,13 +55,13 @@ export default function App() {
   });
 
   return (
-    <div className="main">
+    <div className="app">
       <Header
         handleSearchChange={handleSearchChange}
         searchInput={searchInput}
         handleSubmit={handleSubmit}
       />
-      <WordEntry wordData={wordData} meaningElements={meaningElements} />
+      <Main wordData={wordData} meaningElements={meaningElements} />
     </div>
   );
 }

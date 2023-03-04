@@ -1,8 +1,8 @@
 import Source from "./Source";
 
-export default function WordEntry(props) {
+export default function Main(props) {
   return (
-    <div className="word-entry">
+    <div className="main">
       <div>
         <p className="word-entry--heading">{props.wordData.word}</p>
         <p>{props.wordData.phonetic}</p>
