@@ -2,26 +2,37 @@ import { nanoid } from "nanoid";
 
 export default function Meaning(props) {
   const definitions = props.item.definitions.map((item) => {
-    return <li key={nanoid()}>{item.definition}</li>;
+    return (
+      <li className="definition" key={nanoid()}>
+        {item.definition}
         {item.example && (
           <p className="definition--example">"{item.example}"</p>
         )}
+      </li>
+    );
   });
 
   const synonyms = props.item.synonyms.map((item) => {
-    return <p key={nanoid()}>{item}</p>;
+    return (
+      <p className="synonyms" key={nanoid()}>
+        {item}
+      </p>
+    );
   });
 
   return (
-    <div className="meaning">
-      <div className="box">
-        <p className="">{props.item.partOfSpeech}</p>
+    <div className={props.darkMode ? "meaning dark" : "meaning"}>
+      <div className="part-of-speech--container">
+        <p className="part-of-speech">{props.item.partOfSpeech}</p>
+        <hr className="line"></hr>
       </div>
-      <p className="">Meaning</p>
-      <ul className="">{definitions}</ul>
-      <dl className="synonyms">
+      <p className="meaning-text">Meaning</p>
+      <ul className="definitions">{definitions}</ul>
+      <dl className="synonyms-container">
         <dt>
-          <p className="">Synonyms</p>
+          {props.item.synonyms.length > 0 && (
+            <p className="synonym-text">Synonyms</p>
+          )}
         </dt>
         <dd>{synonyms}</dd>
       </dl>
