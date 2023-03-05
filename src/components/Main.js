@@ -4,8 +4,8 @@ export default function Main(props) {
   return (
     <div className="main">
       <div>
-        <p className="word-entry--heading">{props.wordData.word}</p>
-        <p>{props.wordData.phonetic}</p>
+          <p className="main--heading">{props.wordData.word}</p>
+          <p className="main--phonetic">{props.wordData.phonetic}</p>
       </div>
       {props.meaningElements}
       {props.wordData && <Source wordData={props.wordData} />}
