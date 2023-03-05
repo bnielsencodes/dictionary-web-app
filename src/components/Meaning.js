@@ -3,6 +3,9 @@ import { nanoid } from "nanoid";
 export default function Meaning(props) {
   const definitions = props.item.definitions.map((item) => {
     return <li key={nanoid()}>{item.definition}</li>;
+        {item.example && (
+          <p className="definition--example">"{item.example}"</p>
+        )}
   });
 
   const synonyms = props.item.synonyms.map((item) => {
