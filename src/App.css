@@ -442,4 +442,47 @@ MEANING styles
   border: 0.5px solid var(--color-neutral-500);
 }
 
+/* *************************
+****************************
+DEFINITIONS styles
+****************************
+************************* */
+
+.meaning-text {
+  margin-bottom: 17px;
+  color: var(--color-neutral-400);
+}
+
+.definitions {
+  padding-left: 14px;
+}
+
+.definition {
+  padding-left: 19px;
+  color: var(--color-neutral-600);
+  font-size: 15px;
+  line-height: var(--line-height-md);
+}
+
+.meaning.dark .definition {
+  color: var(--color-neutral-100);
+}
+
+.definition:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+/* Custom bullet points */
+.definition::marker {
+  content: "\2022";
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  color: var(--color-purple);
+  font-weight: bold;
+}
+
+.definition--example {
+  margin-top: 13px;
+  color: var(--color-neutral-400);
+}
+
 }
