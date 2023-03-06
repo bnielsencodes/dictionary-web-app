@@ -550,4 +550,114 @@ SOURCE styles
   margin-bottom: -2px;
 }
 
+/* *************************
+****************************
+768px MEDIA QUERIES
+****************************
+************************* */
+
+@media screen and (min-width: 768px) {
+  .app {
+    padding: 58px 39px 118px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header--top {
+    margin-bottom: 51px;
+  }
+
+  .logo {
+    width: 32px;
+  }
+
+  .font-select {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+  }
+
+  .dark-mode-toggle {
+    margin-left: 27px;
+  }
+
+  .toggler--slider {
+    margin: 0 19px 0 17px;
+  }
+
+  .search-bar input {
+    height: 64px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-md);
+  }
+
+  .search-bar label {
+    top: 22px;
+  }
+
+  .main--heading {
+    margin-bottom: 11px;
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-xl);
+  }
+
+  .main--phonetic {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
+
+  .audio-btn {
+    width: 75px;
+  }
+
+  .audio-btn::after {
+    content: url("/src/assets/images/icon-play.svg");
+    width: 75px;
+  }
+
+  .audio-btn:hover::after {
+    content: url("/src/assets/images/icon-play-hover.svg");
+  }
+
+  .meaning {
+    margin-top: 43px;
+  }
+
+  .part-of-speech--container {
+    margin-bottom: 43px;
+  }
+
+  .part-of-speech {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-md);
+  }
+
+  .meaning-text {
+    margin-bottom: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-md);
+  }
+
+  .definition {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+  }
+
+  .synonyms-container {
+    margin-top: 41px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-md);
+  }
+
+  .source {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .source p {
+    margin-right: 20px;
+  }
+}
+
 }
