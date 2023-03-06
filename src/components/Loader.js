@@ -1,13 +1,13 @@
-import spinner from "../assets/images/loader-regular.svg";
+import loadingIcon from "../assets/images/loader-regular.svg";
 
 export default function Loader() {
   return (
     <div className="loader">
       <img
-        src={spinner}
-        alt=""
+        className="loader--spinner"
+        src={loadingIcon}
+        alt="loading icon"
         aria-hidden="true"
-        className="loader__spinner"
       />
     </div>
   );
