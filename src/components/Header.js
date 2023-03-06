@@ -1,6 +1,6 @@
-import FontToggle from "./FontToggle";
-import DarkModeToggle from "./DarkModeToggle";
 import logo from "../assets/images/logo.svg";
+import FontSelect from "./FontSelect";
+import DarkModeToggle from "./DarkModeToggle";
 import SearchBar from "./SearchBar";
 
 export default function Header(props) {
