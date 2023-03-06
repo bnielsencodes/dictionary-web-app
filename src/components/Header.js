@@ -9,14 +9,18 @@ export default function Header(props) {
       <div className="header--top">
         <img className="logo" src={logo} alt="app logo" />
         <div className="controls">
-          <FontSelect />
-          <DarkModeToggle />
+          <FontSelect darkMode={props.darkMode} />
+          <DarkModeToggle
+            darkMode={props.darkMode}
+            toggleDarkMode={props.toggleDarkMode}
+          />
         </div>
       </div>
       <SearchBar
         handleSearchChange={props.handleSearchChange}
         searchInput={props.searchInput}
         handleSubmit={props.handleSubmit}
+        darkMode={props.darkMode}
       />
     </div>
   );
