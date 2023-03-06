@@ -2,8 +2,8 @@ import searchIcon from "../assets/images/icon-search.svg";
 
 export default function SearchBar(props) {
   return (
-    <div className="search-bar">
       <form onSubmit={props.handleSubmit}>
+    <div className={props.darkMode ? "search-bar dark" : "search-bar"}>
         <input
           id="search-bar--input"
           type="text"
