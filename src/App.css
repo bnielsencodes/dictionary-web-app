@@ -485,4 +485,25 @@ DEFINITIONS styles
   color: var(--color-neutral-400);
 }
 
+/* *************************
+****************************
+SYNONYMS styles
+****************************
+************************* */
+
+.synonyms-container {
+  display: flex;
+  margin-top: 24px;
+}
+
+.synonyms-container dt p {
+  margin-right: 24px;
+  color: var(--color-neutral-400);
+}
+
+.synonyms {
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
 }
