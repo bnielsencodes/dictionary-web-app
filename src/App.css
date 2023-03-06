@@ -373,4 +373,36 @@ MAIN styles
   color: var(--color-purple);
   font-size: var(--font-size-md);
 }
+
+.audio-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-accent-300);
+  transition: background-color 0.3s, width 0.3s;
+  cursor: pointer;
+}
+
+.audio-btn::after {
+  content: url("/src/assets/images/icon-play-mobile.svg");
+  display: block;
+  width: 48px;
+  background-color: var(--color-accent-400);
+  aspect-ratio: 1;
+}
+
+.audio-btn:hover::after {
+  content: url("/src/assets/images/icon-play-mobile-hover.svg");
+}
+
+.audio-btn:focus-visible,
+.audio-btn:focus-visible::after,
+.audio-btn:hover,
+.audio-btn:hover::after {
+  outline: none;
+}
+
 }
