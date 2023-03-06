@@ -14,6 +14,11 @@ export default function App() {
   const [wordData, setWordData] = useState("");
   const [meanings, setMeanings] = useState([]);
 
+  // toggle dark mode
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode);
+  }
+
   // set searchInput state on every keystroke
   function handleSearchChange(event) {
     setSearchInput((prevSearchData) => {
