@@ -1,3 +1,4 @@
+import AudioPlayer from "./AudioPlayer";
 import Source from "./Source";
 
 export default function Main(props) {
@@ -20,6 +21,7 @@ export default function Main(props) {
             <p className="main--heading">{props.wordData.word}</p>
             <p className="main--phonetic">{props.wordData.phonetic}</p>
           </div>
+          {props.wordData && <AudioPlayer wordData={props.wordData} />}
         </div>
         {props.meaningElements}
       </div>
