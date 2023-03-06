@@ -61,13 +61,15 @@ export default function App() {
   });
 
   return (
-    <div className="app">
       <Header
         handleSearchChange={handleSearchChange}
         searchInput={searchInput}
         handleSubmit={handleSubmit}
       />
       <Main wordData={wordData} meaningElements={meaningElements} />
+    <div className={darkMode ? "app dark" : "app"}>
+      <div className="app--inner">
+      </div>
     </div>
   );
 }
