@@ -405,4 +405,41 @@ MAIN styles
   outline: none;
 }
 
+/* *************************
+****************************
+MEANING styles
+****************************
+************************* */
+
+.meaning {
+  margin-top: 32px;
+}
+
+.part-of-speech--container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.part-of-speech {
+  margin-right: 16px;
+  color: var(--color-neutral-600);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.meaning.dark .part-of-speech {
+  color: var(--color-neutral-100);
+}
+
+.line {
+  width: 100%;
+  border: 0.5px solid var(--color-neutral-300);
+}
+
+.meaning.dark .line {
+  border: 0.5px solid var(--color-neutral-500);
+}
+
 }
