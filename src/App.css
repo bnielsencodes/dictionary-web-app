@@ -77,6 +77,12 @@ body {
   --line-height-lg: 29px;
   --line-height-xl: 77px;
 }
+
+.app {
+  min-height: 100vh;
+  padding: 24px 24px 85px;
+}
+
   display: flex;
   align-items: center;
 }
