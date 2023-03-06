@@ -660,4 +660,42 @@ SOURCE styles
   }
 }
 
+/* *************************
+****************************
+1028px MEDIA QUERIES
+****************************
+************************* */
+
+@media screen and (min-width: 1028px) {
+  .app {
+    padding: 0;
+  }
+
+  .app--inner {
+    max-width: 737px;
+    padding: 58px 0 128px;
+    margin-inline: auto;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .main--heading {
+    margin-bottom: 8px;
+  }
+
+  .main--phonetic {
+    line-height: var(--line-height-lg);
+  }
+
+  .part-of-speech {
+    line-height: var(--line-height-lg);
+  }
+
+  .source {
+    line-height: var(--line-height-sm);
+  }
+}
+
 }
