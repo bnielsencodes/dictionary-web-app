@@ -83,6 +83,10 @@ body {
   padding: 24px 24px 85px;
 }
 
+.app.dark {
+  background-color: var(--color-neutral-800);
+}
+
 /* *************************
 ****************************
 HEADER styles
