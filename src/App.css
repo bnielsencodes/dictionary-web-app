@@ -342,8 +342,35 @@ input::placeholder {
 
   display: flex;
   align-items: center;
+/* *************************
+****************************
+MAIN styles
+****************************
+************************* */
+
+.main--inner-container {
+  margin-bottom: 24px;
 }
 
+.main--header {
+  display: flex;
+  justify-content: space-between;
 }
 
+.main--heading {
+  margin-bottom: 10px;
+  color: var(--color-neutral-600);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  line-height: 38.73px;
+}
+
+.main.dark .main--heading {
+  color: var(--color-neutral-100);
+}
+
+.main--phonetic {
+  color: var(--color-purple);
+  font-size: var(--font-size-md);
+}
 }
