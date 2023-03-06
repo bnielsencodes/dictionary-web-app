@@ -6,6 +6,7 @@ import Meaning from "./components/Meaning";
 import "./App.css";
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState(false);
   const [searchInput, setSearchInput] = useState({
     searchInput: "",
   });
