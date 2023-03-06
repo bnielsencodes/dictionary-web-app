@@ -23,7 +23,9 @@ export default function Main(props) {
         </div>
         {props.meaningElements}
       </div>
-      {props.wordData && <Source wordData={props.wordData} />}
+      {props.wordData && (
+        <Source darkMode={props.darkMode} wordData={props.wordData} />
+      )}
     </div>
   );
 }
