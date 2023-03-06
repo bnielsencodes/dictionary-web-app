@@ -10,12 +10,16 @@ export default function Main(props) {
   };
 
   return (
-    <div className="main">
-      <div className="main--inner-container">
+    <div className={props.darkMode ? "main dark" : "main"}>
+      <div
+        className="main--inner-container"
         style={props.darkMode ? borderDarkStyles : borderLightStyles}
+      >
         <div className="main--header">
-          <p className="main--heading">{props.wordData.word}</p>
-          <p className="main--phonetic">{props.wordData.phonetic}</p>
+          <div className="main--header-left">
+            <p className="main--heading">{props.wordData.word}</p>
+            <p className="main--phonetic">{props.wordData.phonetic}</p>
+          </div>
         </div>
         {props.meaningElements}
       </div>
