@@ -1,8 +1,13 @@
+import iconNewWindow from "../assets/images/icon-new-window.svg";
+
 export default function Source(props) {
   return (
     <div className="source">
       <p>Source</p>
-      <a href={props.wordData.src}>{props.wordData.src}</a>
+      <div>
+        <a href={props.wordData.src}>{props.wordData.src}</a>
+        <img src={iconNewWindow} alt="" />
+      </div>
     </div>
   );
 }
