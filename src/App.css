@@ -232,6 +232,58 @@ FONT SELECT styles
   font-family: var(--font-family-mono);
 }
 
+/* *************************
+****************************
+DARK MODE TOGGLE styles
+****************************
+************************* */
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-left: 9px;
+  border-left: 1px solid var(--color-neutral-300);
+  margin-left: 16px;
+}
+
+.toggler--slider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 38px;
+  height: 18px;
+  border: 1px solid var(--color-neutral-400);
+  border-radius: 32px;
+  margin: 0 11px 0 6px;
+  background-color: var(--color-neutral-400);
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.toggler--slider:hover {
+  border: 1px solid var(--color-purple);
+  background-color: var(--color-purple);
+}
+
+.dark-mode-toggle.dark .toggler--slider {
+  border: 1px solid var(--color-purple);
+  background-color: var(--color-purple);
+}
+
+.toggler--slider--circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  background-color: var(--color-neutral-100);
+}
+
+.dark-mode-toggle.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
   display: flex;
   align-items: center;
 }
