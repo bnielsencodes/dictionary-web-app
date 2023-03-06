@@ -28,6 +28,23 @@ html[data-font="serif"] {
 html[data-font="mono"] {
   --font: var(--font-family-mono);
 }
+
+::selection {
+  background-color: var(--color-purple);
+  color: var(--color-neutral-100);
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 body {
   /* Colors */
   --color-neutral-100: #fff;
