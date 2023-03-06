@@ -83,6 +83,31 @@ body {
   padding: 24px 24px 85px;
 }
 
+/* *************************
+****************************
+HEADER styles
+****************************
+************************* */
+
+.header {
+  margin-bottom: 26px;
+}
+
+.header--top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 28px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
   display: flex;
   align-items: center;
 }
