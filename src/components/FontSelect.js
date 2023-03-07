@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
+
 export default function FontSelect(props) {
+  const [font, setFont] = useState({ name: "Sans Serif", type: "sans" });
+
   return (
     <div className={props.darkMode ? "font-select dark" : "font-select"}>
       <input
