@@ -91,7 +91,7 @@ export default function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <div className="app--inner">
+      <div className="app__inner">
         <Header
           handleSearchChange={handleSearchChange}
           searchInput={searchInput}
