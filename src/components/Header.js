@@ -6,9 +6,9 @@ import SearchBar from "./SearchBar";
 export default function Header(props) {
   return (
     <div className="header">
-      <div className="header--top">
-        <img className="logo" src={logo} alt="app logo" />
-        <div className="controls">
+      <div className="header__top">
+        <img className="header__logo" src={logo} alt="book logo" />
+        <div className="header__controls">
           <FontSelect darkMode={props.darkMode} />
           <DarkModeToggle
             darkMode={props.darkMode}

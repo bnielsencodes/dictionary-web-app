@@ -5,16 +5,20 @@ export default function SearchBar(props) {
       <form onSubmit={props.handleSubmit}>
     <div className={props.darkMode ? "search-bar dark" : "search-bar"}>
         <input
-          id="search-bar--input"
+          id="search"
+          className="search-bar__input"
           type="text"
           placeholder="Search for any word..."
           onChange={props.handleSearchChange}
           name="searchInput"
           value={props.searchInput.searchInput}
         />
-        <label htmlFor="search-bar--input">
+        <label htmlFor="search-bar__input" className="search-bar__label">
           <button>
-            <img className="search-icon" src={searchIcon} alt="" />
+            <img
+              className="search-bar__icon"
+              src={searchIcon}
+            />
           </button>
         </label>
       </form>

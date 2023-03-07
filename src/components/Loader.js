@@ -4,7 +4,7 @@ export default function Loader() {
   return (
     <div className="loader">
       <img
-        className="loader--spinner"
+        className="loader__icon"
         src={loadingIcon}
         alt="loading icon"
         aria-hidden="true"

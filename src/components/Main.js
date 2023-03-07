@@ -13,13 +13,13 @@ export default function Main(props) {
   return (
     <div className={props.darkMode ? "main dark" : "main"}>
       <div
-        className="main--inner-container"
+        className="main__inner-container"
         style={props.darkMode ? borderDarkStyles : borderLightStyles}
       >
-        <div className="main--header">
-          <div className="main--header-left">
-            <p className="main--heading">{props.wordData.word}</p>
-            <p className="main--phonetic">{props.wordData.phonetic}</p>
+        <div className="main__header">
+          <div className="main__header-left">
+            <p className="main__heading">{props.wordData.word}</p>
+            <p className="main__phonetic">{props.wordData.phonetic}</p>
           </div>
           {props.wordData && <AudioPlayer wordData={props.wordData} />}
         </div>

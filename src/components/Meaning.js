@@ -6,7 +6,7 @@ export default function Meaning(props) {
       <li className="definition" key={nanoid()}>
         {item.definition}
         {item.example && (
-          <p className="definition--example">"{item.example}"</p>
+          <p className="definition__example">"{item.example}"</p>
         )}
       </li>
     );
@@ -22,11 +22,11 @@ export default function Meaning(props) {
 
   return (
     <div className={props.darkMode ? "meaning dark" : "meaning"}>
-      <div className="part-of-speech--container">
-        <p className="part-of-speech">{props.item.partOfSpeech}</p>
+      <div className="meaning__part-of-speech-container">
+        <p className="meaning__part-of-speech">{props.item.partOfSpeech}</p>
         <hr className="line"></hr>
       </div>
-      <p className="meaning-text">Meaning</p>
+      <p className="meaning__text">Meaning</p>
       <ul className="definitions">{definitions}</ul>
       <dl className="synonyms-container">
         <dt>
