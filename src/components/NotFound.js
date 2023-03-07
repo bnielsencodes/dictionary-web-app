@@ -1,10 +1,11 @@
 // emoji icon from icons8.com
 import emojiIcon from "../assets/images/icons8-confused-face-96.png";
 
-export default function NotFound() {
+export default function NotFound(props) {
   return (
     <div className="not-found">
       <img className="not-found__icon" src={emoji} alt="" aria-hidden="true" />
+    <div className={props.darkMode ? "not-found dark" : "not-found"}>
         src={emojiIcon}
       <h1 className="not-found__title">No Definitions Found</h1>
       <p className="not-found__message">
