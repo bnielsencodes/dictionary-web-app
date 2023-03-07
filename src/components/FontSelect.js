@@ -13,6 +13,11 @@ export default function FontSelect(props) {
     }
   }, []);
 
+  useEffect(() => {
+    document.querySelector("html").dataset.font = font.type;
+    document.querySelector(".font-select__button").checked = false;
+  }, [font]);
+
   return (
     <div className={props.darkMode ? "font-select dark" : "font-select"}>
       <input
