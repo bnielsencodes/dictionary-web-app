@@ -7,6 +7,8 @@ import "./App.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [valid, setValid] = useState(true);
+  const [mainState, setMainState] = useState();
   const [searchInput, setSearchInput] = useState({
     searchInput: "",
   });
