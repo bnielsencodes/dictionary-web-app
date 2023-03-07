@@ -53,6 +53,19 @@ export default function App() {
     loading: <Loader />,
   };
 
+  // function to validate searchInput
+  const validateInput = function (e) {
+    e.preventDefault();
+    if (searchInput.searchInput === "") {
+      setValid(false);
+      setWordData(undefined);
+      setMainState("blank");
+    } else {
+      setValid(true);
+      getWordData(searchInput.searchInput);
+    }
+  };
+
     <div className={darkMode ? "app dark" : "app"}>
       <div className="app--inner">
       </div>
