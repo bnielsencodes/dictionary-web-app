@@ -19,9 +19,13 @@ export default function SearchBar(props) {
             <img
               className="search-bar__icon"
               src={searchIcon}
+              alt="magnifying glass icon"
             />
           </button>
         </label>
+        <span className="search-bar__error">
+          {props.valid ? "" : "Whoops, can’t be empty..."}
+        </span>
       </form>
     </div>
   );
