@@ -3,6 +3,16 @@ import { useEffect, useState } from "react";
 export default function FontSelect(props) {
   const [font, setFont] = useState({ name: "Sans Serif", type: "sans" });
 
+  useEffect(() => {
+    const prefersFont = window.localStorage.getItem("font");
+    if (prefersFont) {
+      setFont({
+        name: { sans: "Sans Serif", serif: "Serif", mono: "Mono" }[prefersFont],
+        type: prefersFont,
+      });
+    }
+  }, []);
+
   return (
     <div className={props.darkMode ? "font-select dark" : "font-select"}>
       <input
