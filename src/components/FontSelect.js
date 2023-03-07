@@ -18,6 +18,17 @@ export default function FontSelect(props) {
     document.querySelector(".font-select__button").checked = false;
   }, [font]);
 
+  const toggleFont = function () {
+    const selectedFont = document.querySelector(
+      ".font-select__input:checked + label"
+    );
+    window.localStorage.setItem("font", selectedFont.htmlFor);
+    setFont({
+      name: selectedFont.textContent,
+      type: selectedFont.htmlFor,
+    });
+  };
+
   return (
     <div className={props.darkMode ? "font-select dark" : "font-select"}>
       <input
