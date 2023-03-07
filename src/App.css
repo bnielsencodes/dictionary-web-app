@@ -98,7 +98,7 @@ LOADER styles
   justify-content: center;
 }
 
-.loader--spinner {
+.loader__icon {
   width: 48px;
   opacity: 0.5;
   animation: spin 3s linear infinite;
@@ -157,17 +157,17 @@ HEADER styles
   margin-bottom: 26px;
 }
 
-.header--top {
+.header__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
 }
 
-.logo {
+.header__logo {
   width: 28px;
 }
 
-.controls {
+.header__controls {
   display: flex;
   align-items: center;
 }
@@ -208,24 +208,24 @@ FONT SELECT styles
   line-height: 0;
 }
 
-.font-select--button {
+.font-select__button {
   background-color: var(--color-neutral-100);
   appearance: none;
 }
 
-.font-select--button {
+.font-select__button {
   background-color: var(--color-neutral-800);
 }
 
-.font-select--button:focus-visible {
+.font-select__button:focus-visible {
   outline: none;
 }
 
-.font-select--button:focus-visible + label {
+.font-select__button:focus-visible + label {
   color: var(--color-accent-400);
 }
 
-.font-select--button:checked ~ .font-select--list {
+.font-select__button:checked ~ .font-select__list {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -233,7 +233,7 @@ FONT SELECT styles
     color 0.5s ease-out, background-color 0.5s ease-out;
 }
 
-.font-select--list {
+.font-select__list {
   position: absolute;
   top: 32.5px;
   right: 0;
@@ -255,44 +255,44 @@ FONT SELECT styles
   list-style: none;
 }
 
-.font-select.dark .font-select--list {
+.font-select.dark .font-select__list {
   box-shadow: 0 5px 1.75rem var(--color-accent);
   background-color: var(--color-neutral-700);
 }
 
-.font-select--item {
+.font-select__item {
   display: flex;
 }
 
-.font-select--input {
+.font-select__input {
   appearance: none;
 }
 
-.font-select--input:focus-visible {
+.font-select__input:focus-visible {
   outline: none;
 }
 
-.font-select--input:focus-visible + .font-select__label,
-.font-select.dark .font-select--input:focus-visible + .font-select__label,
-.font-select.dark .font-select--label:hover,
-.font-select--label:hover {
+.font-select__input:focus-visible + .font-select__label,
+.font-select.dark .font-select__input:focus-visible + .font-select__label,
+.font-select.dark .font-select__label:hover,
+.font-select__label:hover {
   color: var(--color-accent);
 }
 
-.font-select--label {
+.font-select__label {
   flex-grow: 1;
   cursor: pointer;
 }
 
-.font-select--label[for="sans"] {
+.font-select__label[for="sans"] {
   font-family: var(--font-family-sans);
 }
 
-.font-select--label[for="serif"] {
+.font-select__label[for="serif"] {
   font-family: var(--font-family-serif);
 }
 
-.font-select--label[for="mono"] {
+.font-select__label[for="mono"] {
   font-family: var(--font-family-mono);
 }
 
@@ -311,7 +311,7 @@ DARK MODE TOGGLE styles
   margin-left: 16px;
 }
 
-.toggler--slider {
+.toggler-slider {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -325,17 +325,17 @@ DARK MODE TOGGLE styles
   cursor: pointer;
 }
 
-.toggler--slider:hover {
+.toggler-slider:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
 }
 
-.dark-mode-toggle.dark .toggler--slider {
+.dark-mode-toggle.dark .toggler-slider {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
 }
 
-.toggler--slider--circle {
+.toggler-slider__circle {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -344,7 +344,7 @@ DARK MODE TOGGLE styles
   background-color: var(--color-neutral-100);
 }
 
-.dark-mode-toggle.dark .toggler--slider {
+.dark-mode-toggle.dark .toggler-slider {
   justify-content: flex-end;
 }
 
@@ -425,16 +425,16 @@ MAIN styles
 ****************************
 ************************* */
 
-.main--inner-container {
+.main__inner-container {
   margin-bottom: 24px;
 }
 
-.main--header {
+.main__header {
   display: flex;
   justify-content: space-between;
 }
 
-.main--heading {
+.main__heading {
   margin-bottom: 10px;
   color: var(--color-neutral-600);
   font-size: var(--font-size-2xl);
@@ -442,11 +442,11 @@ MAIN styles
   line-height: 38.73px;
 }
 
-.main.dark .main--heading {
+.main.dark .main__heading {
   color: var(--color-neutral-100);
 }
 
-.main--phonetic {
+.main__phonetic {
   color: var(--color-accent);
   font-size: var(--font-size-md);
 }
@@ -492,13 +492,13 @@ MEANING styles
   margin-top: 32px;
 }
 
-.part-of-speech--container {
+.meaning__part-of-speech-container {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
 }
 
-.part-of-speech {
+.meaning__part-of-speech {
   margin-right: 16px;
   color: var(--color-neutral-600);
   font-size: var(--font-size-md);
@@ -506,7 +506,7 @@ MEANING styles
   font-style: italic;
 }
 
-.meaning.dark .part-of-speech {
+.meaning.dark .meaning__part-of-speech {
   color: var(--color-neutral-100);
 }
 
@@ -525,7 +525,7 @@ DEFINITIONS styles
 ****************************
 ************************* */
 
-.meaning-text {
+.meaning__text {
   margin-bottom: 17px;
   color: var(--color-neutral-400);
 }
@@ -646,7 +646,7 @@ SOURCE styles
     margin-bottom: 51px;
   }
 
-  .logo {
+  .header__logo {
     width: 32px;
   }
 
@@ -659,7 +659,7 @@ SOURCE styles
     margin-left: 27px;
   }
 
-  .toggler--slider {
+  .toggler-slider {
     margin: 0 19px 0 17px;
   }
 
@@ -701,16 +701,16 @@ SOURCE styles
     margin-top: 43px;
   }
 
-  .part-of-speech--container {
+  .meaning__part-of-speech-container {
     margin-bottom: 43px;
   }
 
-  .part-of-speech {
+  .meaning__part-of-speech {
     font-size: var(--font-size-xl);
     line-height: var(--line-height-md);
   }
 
-  .meaning-text {
+  .meaning__text {
     margin-bottom: 27px;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-md);
@@ -748,7 +748,7 @@ SOURCE styles
     padding: 0;
   }
 
-  .app--inner {
+  .app__inner {
     max-width: 737px;
     padding: 58px 0 128px;
     margin-inline: auto;
@@ -779,15 +779,15 @@ SOURCE styles
     font-size: var(--font-size-lg);
   }
 
-  .main--heading {
+  .main__heading {
     margin-bottom: 8px;
   }
 
-  .main--phonetic {
+  .main__phonetic {
     line-height: var(--line-height-lg);
   }
 
-  .part-of-speech {
+  .meaning__part-of-speech {
     line-height: var(--line-height-lg);
   }
 
