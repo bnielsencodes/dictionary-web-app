@@ -30,7 +30,7 @@ html[data-font="mono"] {
 }
 
 ::selection {
-  background-color: var(--color-purple);
+  background-color: var(--color-accent);
   color: var(--color-neutral-100);
 }
 
@@ -59,8 +59,8 @@ body {
   --color-neutral-600: #2d2d2d;
   --color-neutral-700: #1f1f1f;
   --color-neutral-800: #050505;
-  --color-purple: #a445ed;
-  --color-red: #ff5252;
+  --color-accent: #a445ed;
+  --color-error: #ff5252;
   --color-placeholder: rgb(255 255 255 0.25);
   /* Font family */
   font-family: var(--font);
@@ -256,7 +256,7 @@ FONT SELECT styles
 }
 
 .font-select.dark .font-select--list {
-  box-shadow: 0 5px 1.75rem var(--color-purple);
+  box-shadow: 0 5px 1.75rem var(--color-accent);
   background-color: var(--color-neutral-700);
 }
 
@@ -276,7 +276,7 @@ FONT SELECT styles
 .font-select.dark .font-select--input:focus-visible + .font-select__label,
 .font-select.dark .font-select--label:hover,
 .font-select--label:hover {
-  color: var(--color-purple);
+  color: var(--color-accent);
 }
 
 .font-select--label {
@@ -326,13 +326,13 @@ DARK MODE TOGGLE styles
 }
 
 .toggler--slider:hover {
-  border: 1px solid var(--color-purple);
-  background-color: var(--color-purple);
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 .dark-mode-toggle.dark .toggler--slider {
-  border: 1px solid var(--color-purple);
-  background-color: var(--color-purple);
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 .toggler--slider--circle {
@@ -430,7 +430,7 @@ MAIN styles
 }
 
 .main--phonetic {
-  color: var(--color-purple);
+  color: var(--color-accent);
   font-size: var(--font-size-md);
 }
 
@@ -536,7 +536,7 @@ DEFINITIONS styles
 .definition::marker {
   content: "\2022";
   display: inline-block; /* Needed to add space between the bullet and the text */
-  color: var(--color-purple);
+  color: var(--color-accent);
   font-weight: bold;
 }
 
@@ -563,7 +563,7 @@ SYNONYMS styles
 
 .synonyms {
   font-weight: 700;
-  color: var(--color-purple);
+  color: var(--color-accent);
 }
 
 /* *************************
@@ -588,7 +588,7 @@ SOURCE styles
 }
 
 .source a:hover {
-  color: var(--color-purple);
+  color: var(--color-accent);
 }
 
 .source a:hover + img {
@@ -603,7 +603,7 @@ SOURCE styles
 }
 
 .source.dark a:hover {
-  color: var(--color-purple);
+  color: var(--color-accent);
 }
 
 .source img {
