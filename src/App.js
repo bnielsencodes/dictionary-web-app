@@ -31,14 +31,9 @@ export default function App() {
   }
 
   const meaningElements = meanings.map((item) => {
-    return <Meaning key={nanoid()} item={item} />;
+    return <Meaning key={nanoid()} item={item} darkMode={darkMode} />;
   });
 
-  return (
-      <Header
-        handleSearchChange={handleSearchChange}
-        searchInput={searchInput}
-        handleSubmit={handleSubmit}
   // main states object
   const mainStates = {
     blank: <div></div>,
@@ -92,8 +87,18 @@ export default function App() {
     }
   };
 
+  return (
     <div className={darkMode ? "app dark" : "app"}>
       <div className="app--inner">
+        <Header
+          handleSearchChange={handleSearchChange}
+          searchInput={searchInput}
+          darkMode={darkMode}
+          toggleDarkMode={toggleDarkMode}
+          valid={valid}
+          validateInput={validateInput}
+        />
+        <main>{mainStates[mainState]}</main>
       </div>
     </div>
   );
