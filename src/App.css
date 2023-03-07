@@ -134,7 +134,7 @@ NOT FOUND styles
 .not-found__title {
   padding: 24px 0 24px;
   color: var(--color-neutral-600);
-  font-size: 18px;
+  font-size: var(--font-size-md);
   font-weight: 700;
 }
 
@@ -747,11 +747,11 @@ SOURCE styles
 
   .not-found__title {
     padding: 28px 0 24px;
-    font-size: 20px;
+    font-size: var(--font-size-lg);
   }
 
   .not-found__message {
-    font-size: 18px;
+    font-size: var(--font-size-md);
   }
 
   .header {
