@@ -10,7 +10,6 @@ export default function App() {
   const [searchInput, setSearchInput] = useState({
     searchInput: "",
   });
-  const [searchedWord, setSearchedWord] = useState([]);
   const [wordData, setWordData] = useState("");
   const [meanings, setMeanings] = useState([]);
 
