@@ -39,8 +39,20 @@ export default function App() {
         handleSearchChange={handleSearchChange}
         searchInput={searchInput}
         handleSubmit={handleSubmit}
+  // main states object
+  const mainStates = {
+    blank: <div></div>,
+    error: <NotFound darkMode={darkMode} />,
+    main: (
+      <Main
+        darkMode={darkMode}
+        wordData={wordData}
+        meaningElements={meaningElements}
       />
-      <Main wordData={wordData} meaningElements={meaningElements} />
+    ),
+    loading: <Loader />,
+  };
+
     <div className={darkMode ? "app dark" : "app"}>
       <div className="app--inner">
       </div>
