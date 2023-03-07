@@ -66,6 +66,32 @@ export default function App() {
     }
   };
 
+  const getWordData = async function (param) {
+    try {
+      setMainState("loading");
+      const response = await fetch(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${param}`
+      );
+      if (!response.ok) throw new Error(`⚠️ Error (${response.status})`);
+      const [data] = await response.json();
+      const dataObj = {
+        word: data.word,
+        phonetic: data.phonetics[0]?.text || "",
+        audio: data.phonetics.filter((phonetic) => phonetic.audio !== "")[0]
+          .audio,
+        meanings: data.meanings,
+        src: data.sourceUrls[0] || "",
+        id: nanoid(),
+      };
+      setMeanings(data.meanings);
+      setWordData(dataObj);
+      setMainState("main");
+    } catch (error) {
+      console.warn(error);
+      setMainState("error");
+    }
+  };
+
     <div className={darkMode ? "app dark" : "app"}>
       <div className="app--inner">
       </div>
