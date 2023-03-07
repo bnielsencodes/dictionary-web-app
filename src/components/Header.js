@@ -21,6 +21,8 @@ export default function Header(props) {
         searchInput={props.searchInput}
         handleSubmit={props.handleSubmit}
         darkMode={props.darkMode}
+        valid={props.valid}
+        validateInput={props.validateInput}
       />
     </div>
   );
