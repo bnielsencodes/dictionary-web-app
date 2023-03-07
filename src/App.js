@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { nanoid } from "nanoid";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -28,27 +28,6 @@ export default function App() {
       };
     });
   }
-
-  // fetch API and set wordData state
-  useEffect(() => {
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`)
-      .then((res) => res.json())
-      .then((data) => {
-        let dataObj = [];
-        data.forEach((item) => {
-          dataObj.push({
-            word: item.word,
-            phonetic: item.phonetics[0]?.text || "",
-            audio: item.phonetics[0]?.audio || "",
-            meanings: item.meanings,
-            src: item.sourceUrls[0] || "",
-            id: nanoid(),
-          });
-        });
-        setWordData(dataObj[0]);
-        setMeanings(dataObj[0].meanings);
-      });
-  }, [searchedWord]);
 
   const meaningElements = meanings.map((item) => {
     return <Meaning key={nanoid()} item={item} />;
