@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -16,6 +16,16 @@ export default function App() {
   });
   const [wordData, setWordData] = useState("");
   const [meanings, setMeanings] = useState([]);
+
+  useEffect(() => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    if (prefersDark) {
+      setDarkMode(true);
+    }
+  }, []);
 
   // toggle dark mode
   function toggleDarkMode() {
