@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dictionary-web-app/static/css/main.ce6a67fe.css",
-    "main.js": "/dictionary-web-app/static/js/main.488733c0.js",
+    "main.css": "/dictionary-web-app/static/css/main.9ad9dbe1.css",
+    "main.js": "/dictionary-web-app/static/js/main.97dedcc9.js",
     "static/media/loader-regular.svg": "/dictionary-web-app/static/media/loader-regular.6e852e86f19ef64552826f5670b68170.svg",
     "index.html": "/dictionary-web-app/index.html",
     "static/media/icon-new-window.svg": "/dictionary-web-app/static/media/icon-new-window.17ac2f0f91916515096e759611fdaea9.svg",
@@ -14,11 +14,11 @@
     "static/media/icon-play-mobile.svg": "/dictionary-web-app/static/media/icon-play-mobile.52262c279b12b92ad5af.svg",
     "static/media/icon-play.svg": "/dictionary-web-app/static/media/icon-play.a659db0104303a8b8ae0.svg",
     "static/media/icon-arrow-down.svg": "/dictionary-web-app/static/media/icon-arrow-down.aa902848ffe2b4ed5369.svg",
-    "main.ce6a67fe.css.map": "/dictionary-web-app/static/css/main.ce6a67fe.css.map",
-    "main.488733c0.js.map": "/dictionary-web-app/static/js/main.488733c0.js.map"
+    "main.9ad9dbe1.css.map": "/dictionary-web-app/static/css/main.9ad9dbe1.css.map",
+    "main.97dedcc9.js.map": "/dictionary-web-app/static/js/main.97dedcc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce6a67fe.css",
-    "static/js/main.488733c0.js"
+    "static/css/main.9ad9dbe1.css",
+    "static/js/main.97dedcc9.js"
   ]
 }
