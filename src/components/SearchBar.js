@@ -5,7 +5,7 @@ export default function SearchBar(props) {
     <div className={props.darkMode ? "search-bar dark" : "search-bar"}>
       <form noValidate onSubmit={props.validateInput}>
         <input
-          id="search"
+          id="search-bar__input"
           className="search-bar__input"
           type="text"
           name="searchInput"
