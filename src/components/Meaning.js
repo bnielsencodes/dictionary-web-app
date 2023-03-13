@@ -34,7 +34,7 @@ export default function Meaning(props) {
             <p className="synonym-text">Synonyms</p>
           )}
         </dt>
-        <dd>{synonyms}</dd>
+        <dd className="synonym-list">{synonyms}</dd>
       </dl>
     </div>
   );

@@ -574,14 +574,18 @@ SYNONYMS styles
   margin-top: 24px;
 }
 
-.synonyms-container dt p {
+.synonym-text {
   margin-right: 24px;
   color: var(--color-neutral-400);
 }
 
+.synonym-list {
+  display: flex;
+}
 .synonyms {
-  font-weight: 700;
+  padding-right: 12px;
   color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* *************************
