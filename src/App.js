@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Meaning from "./components/Meaning";
 import NotFound from "./components/NotFound";
 import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 import "./App.css";
 
 export default function App() {
@@ -111,6 +112,7 @@ export default function App() {
           validateInput={validateInput}
         />
         <main>{mainStates[mainState]}</main>
+        <Footer />
       </div>
     </div>
   );
