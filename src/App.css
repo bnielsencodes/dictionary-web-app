@@ -645,9 +645,13 @@ FOOTER styles
   bottom: 25px;
   left: 0;
   width: 100%;
-  color: var(--color-neutral-100);
+  color: var(--color-neutral-800);
   font-size: 14px;
   text-align: center;
+}
+
+.footer.dark {
+  color: var(--color-neutral-100);
 }
 
 .footer a {

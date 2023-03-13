@@ -115,7 +115,7 @@ export default function App() {
           {mainStates[mainState]}
         </main>
       </div>
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   );
 }
