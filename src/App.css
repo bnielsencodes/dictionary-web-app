@@ -213,7 +213,7 @@ FONT SELECT styles
   appearance: none;
 }
 
-.font-select__button {
+.font-select.dark .font-select__button {
   background-color: var(--color-neutral-800);
 }
 

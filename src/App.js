@@ -21,7 +21,6 @@ export default function App() {
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-
     if (prefersDark) {
       setDarkMode(true);
     }
@@ -79,6 +78,7 @@ export default function App() {
       const response = await fetch(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${param}`
       );
+
       if (!response.ok) throw new Error(`⚠️ Error (${response.status})`);
       const [data] = await response.json();
       const dataObj = {
