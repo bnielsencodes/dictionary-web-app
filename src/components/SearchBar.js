@@ -14,15 +14,16 @@ export default function SearchBar(props) {
           placeholder="Search for any word..."
           onChange={props.handleSearchChange}
         />
-        <label htmlFor="search-bar__input" className="search-bar__label">
-          <button>
-            <img
-              className="search-bar__icon"
-              src={searchIcon}
-              alt="magnifying glass icon"
-            />
-          </button>
+        <label htmlFor="search-bar__input" hidden>
+          Search for any word
         </label>
+        <button className="search-bar__btn">
+          <img
+            className="search-bar__icon"
+            src={searchIcon}
+            alt="magnifying glass icon"
+          />
+        </button>
         <span className="search-bar__error">
           {props.valid ? "" : "Whoops, can’t be empty..."}
         </span>

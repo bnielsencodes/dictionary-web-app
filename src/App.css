@@ -397,13 +397,13 @@ SEARCH BAR styles
   opacity: 0.25;
 }
 
-.search-bar__label {
+.search-bar__btn {
   position: absolute;
   top: 15px;
   right: 25px;
 }
 
-.search-bar__label button {
+.search-bar__btn {
   border: 0;
   background-color: transparent;
 }
@@ -581,7 +581,9 @@ SYNONYMS styles
 
 .synonym-list {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .synonyms {
   padding-right: 12px;
   color: var(--color-accent);
@@ -696,7 +698,7 @@ FOOTER styles
     line-height: var(--line-height-md);
   }
 
-  .search-bar label {
+  .search-bar__btn {
     top: 22px;
   }
 
