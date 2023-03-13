@@ -51,7 +51,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [CSS Bullet Color](https://www.w3schools.com/howto/howto_css_bullet_color.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS Bullet Color](https://www.w3schools.com/howto/howto_css_bullet_color.asp)
+- [Prefers-Dark-Mode with useEffect](https://stackoverflow.com/questions/61117608/how-do-i-set-system-preference-dark-mode-in-a-react-app-but-also-allow-users-to)
 
 ## Author
 
