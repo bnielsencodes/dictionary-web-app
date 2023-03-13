@@ -11,7 +11,7 @@ export default function Main(props) {
   };
 
   return (
-    <div className={props.darkMode ? "main dark" : "main"}>
+    <>
       <div
         className="main__inner-container"
         style={props.darkMode ? borderDarkStyles : borderLightStyles}
@@ -28,6 +28,6 @@ export default function Main(props) {
       {props.wordData && (
         <Source darkMode={props.darkMode} wordData={props.wordData} />
       )}
-    </div>
+    </>
   );
 }

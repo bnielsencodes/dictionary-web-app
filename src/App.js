@@ -111,7 +111,9 @@ export default function App() {
           valid={valid}
           validateInput={validateInput}
         />
-        <main>{mainStates[mainState]}</main>
+        <main className={darkMode ? "main dark" : "main"}>
+          {mainStates[mainState]}
+        </main>
         <Footer />
       </div>
     </div>
