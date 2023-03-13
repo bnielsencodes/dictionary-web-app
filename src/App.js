@@ -114,8 +114,8 @@ export default function App() {
         <main className={darkMode ? "main dark" : "main"}>
           {mainStates[mainState]}
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
