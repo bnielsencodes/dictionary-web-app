@@ -18,7 +18,7 @@ export default function Main(props) {
       >
         <div className="main__header">
           <div className="main__header-left">
-            <p className="main__heading">{props.wordData.word}</p>
+            <h1 className="main__heading">{props.wordData.word}</h1>
             <p className="main__phonetic">{props.wordData.phonetic}</p>
           </div>
           {props.wordData && <AudioPlayer wordData={props.wordData} />}
