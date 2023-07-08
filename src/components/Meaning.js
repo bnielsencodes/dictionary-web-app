@@ -28,14 +28,16 @@ export default function Meaning(props) {
       </div>
       <p className="meaning__text">Meaning</p>
       <ul className="definitions">{definitions}</ul>
-      <dl className="synonyms-container">
-        <dt>
-          {props.item.synonyms.length > 0 && (
-            <p className="synonym-text">Synonyms</p>
-          )}
-        </dt>
-        <dd className="synonym-list">{synonyms}</dd>
-      </dl>
+      {props.item.synonyms.length > 0 && (
+        <dl className="synonyms-container">
+          <dt>
+            {props.item.synonyms.length > 0 && (
+              <p className="synonym-text">Synonyms</p>
+            )}
+          </dt>
+          <dd className="synonym-list">{synonyms}</dd>
+        </dl>
+      )}
     </div>
   );
 }
