@@ -750,13 +750,16 @@ FOOTER styles
     line-height: var(--line-height-md);
   }
 
+  .definitions {
+    margin-bottom: 39px;
+  }
+
   .definition {
     font-size: var(--font-size-md);
     line-height: var(--line-height-md);
   }
 
   .synonyms-container {
-    margin-top: 41px;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-md);
   }
