@@ -31,9 +31,7 @@ export default function Meaning(props) {
       {props.item.synonyms.length > 0 && (
         <dl className="synonyms-container">
           <dt>
-            {props.item.synonyms.length > 0 && (
-              <p className="synonym-text">Synonyms</p>
-            )}
+            <p className="synonym-text">Synonyms</p>
           </dt>
           <dd className="synonym-list">{synonyms}</dd>
         </dl>
