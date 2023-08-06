@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -16,10 +16,9 @@
 
 ![screenshot preview of Dictionary Web App](src/assets/images/preview.jpg)
 
-### Links
+### Link
 
-- Solution URL: [https://github.com/bnielsencodes/dictionary-web-app](https://github.com/bnielsencodes/dictionary-web-app)
-- Live Site URL: [https://bnielsen.dev/dictionary-web-app](https://bnielsencodes.github.io/dictionary-web-app)
+- Live Site URL: [https://bnielsencodes.github.io/dictionary-web-app](https://bnielsencodes.github.io/dictionary-web-app)
 
 ## My process
 
@@ -27,10 +26,11 @@
 
 - [React](https://reactjs.org/) - JavaScript library
 - [Create React App](https://create-react-app.dev/) - React Build Tool
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [VS Code](https://code.visualstudio.com/) - Integrated development environment
 
 ### Useful resources
 
@@ -39,7 +39,7 @@
 
 ## Author
 
-- Website - [Brandon Nielsen](https://www.bnielsen.dev)
-- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
 - Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
 - Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
