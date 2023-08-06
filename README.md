@@ -1,5 +1,7 @@
 # Dictionary Web App
 
+#### A dictionary web app that pulls data from the Free Dictionary API. 
+
 ## Table of contents
 
 - [Overview](#overview)
